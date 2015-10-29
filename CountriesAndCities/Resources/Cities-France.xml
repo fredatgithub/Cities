@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<cities>
+  <city>
+    <name>Paris</name>
+  </city>
+  <city>
+    <name>Lyon</name>
+  </city>
+  <city>
+    <name>Marseille</name>
+  </city>
+  <city>
+    <name>Nice</name>
+  </city>
+  <city>
+    <name>Nantes</name>
+  </city>
+  <city>
+    <name>Lilles</name>
+  </city>
+</cities>

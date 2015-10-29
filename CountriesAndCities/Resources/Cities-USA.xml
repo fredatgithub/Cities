@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<cities>
+  <city>
+    <name>New York</name>
+  </city>
+  <city>
+    <name>Los Angeles</name>
+  </city>
+</cities>
