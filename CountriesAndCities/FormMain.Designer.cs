@@ -65,6 +65,10 @@
       this.searchToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
       this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
       this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+      this.comboBoxCountry = new System.Windows.Forms.ComboBox();
+      this.labelSelectCountry = new System.Windows.Forms.Label();
+      this.labelCity = new System.Windows.Forms.Label();
+      this.comboBoxCity = new System.Windows.Forms.ComboBox();
       this.menuStrip1.SuspendLayout();
       this.SuspendLayout();
       // 
@@ -364,11 +368,55 @@
       this.aboutToolStripMenuItem.Text = "À &propos de...";
       this.aboutToolStripMenuItem.Click += new System.EventHandler(this.AboutToolStripMenuItem_Click);
       // 
+      // comboBoxCountry
+      // 
+      this.comboBoxCountry.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+      this.comboBoxCountry.FormattingEnabled = true;
+      this.comboBoxCountry.Location = new System.Drawing.Point(48, 91);
+      this.comboBoxCountry.Name = "comboBoxCountry";
+      this.comboBoxCountry.Size = new System.Drawing.Size(159, 28);
+      this.comboBoxCountry.TabIndex = 2;
+      this.comboBoxCountry.Text = "Select a country";
+      // 
+      // labelSelectCountry
+      // 
+      this.labelSelectCountry.AutoSize = true;
+      this.labelSelectCountry.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+      this.labelSelectCountry.Location = new System.Drawing.Point(45, 57);
+      this.labelSelectCountry.Name = "labelSelectCountry";
+      this.labelSelectCountry.Size = new System.Drawing.Size(130, 20);
+      this.labelSelectCountry.TabIndex = 3;
+      this.labelSelectCountry.Text = "Select a country";
+      // 
+      // labelCity
+      // 
+      this.labelCity.AutoSize = true;
+      this.labelCity.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+      this.labelCity.Location = new System.Drawing.Point(268, 57);
+      this.labelCity.Name = "labelCity";
+      this.labelCity.Size = new System.Drawing.Size(101, 20);
+      this.labelCity.TabIndex = 5;
+      this.labelCity.Text = "Select a city";
+      // 
+      // comboBoxCity
+      // 
+      this.comboBoxCity.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+      this.comboBoxCity.FormattingEnabled = true;
+      this.comboBoxCity.Location = new System.Drawing.Point(271, 91);
+      this.comboBoxCity.Name = "comboBoxCity";
+      this.comboBoxCity.Size = new System.Drawing.Size(159, 28);
+      this.comboBoxCity.TabIndex = 4;
+      this.comboBoxCity.Text = "Select a city";
+      // 
       // FormMain
       // 
       this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
       this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
       this.ClientSize = new System.Drawing.Size(911, 534);
+      this.Controls.Add(this.labelCity);
+      this.Controls.Add(this.comboBoxCity);
+      this.Controls.Add(this.labelSelectCountry);
+      this.Controls.Add(this.comboBoxCountry);
       this.Controls.Add(this.menuStrip1);
       this.MainMenuStrip = this.menuStrip1;
       this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -423,5 +471,9 @@
     private System.Windows.Forms.ToolStripMenuItem SmallToolStripMenuItem;
     private System.Windows.Forms.ToolStripMenuItem MediumToolStripMenuItem;
     private System.Windows.Forms.ToolStripMenuItem LargeToolStripMenuItem;
+    private System.Windows.Forms.ComboBox comboBoxCountry;
+    private System.Windows.Forms.Label labelSelectCountry;
+    private System.Windows.Forms.Label labelCity;
+    private System.Windows.Forms.ComboBox comboBoxCity;
   }
 }
