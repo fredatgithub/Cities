@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<countries>
+  <country>
+    <name>Australia</name>
+  </country>
+  <country>
+    <name>Fiji</name>
+  </country>
+  <country>
+    <name>Kiribati</name>
+  </country>
+  <country>
+    <name>Marshall Islands</name>
+  </country>
+  <country>
+    <name>Micronesia</name>
+  </country>
+  <country>
+    <name>Nauru</name>
+  </country>
+  <country>
+    <name>New Zealand</name>
+  </country>
+  <country>
+    <name>Palau</name>
+  </country>
+  <country>
+    <name>Papua New Guinea</name>
+  </country>
+  <country>
+    <name>Samoa</name>
+  </country>
+  <country>
+    <name>Solomon Islands</name>
+  </country>
+  <country>
+    <name>Tonga</name>
+  </country>
+  <country>
+    <name>Tuvalu</name>
+  </country>
+  <country>
+    <name>Vanuatu</name>
+  </country>
+  <country>
+    <name>American Samoa (USA)</name>
+  </country>
+</countries>

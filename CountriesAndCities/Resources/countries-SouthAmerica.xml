@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<countries>
+  <country>
+    <name>Argentina</name>
+  </country>
+  <country>
+    <name>Bolivia</name>
+  </country>
+  <country>
+    <name>Brazil</name>
+  </country>
+  <country>
+    <name>Chile</name>
+  </country>
+  <country>
+    <name>Colombia</name>
+  </country>
+  <country>
+    <name>Ecuador</name>
+  </country>
+  <country>
+    <name>Guyana</name>
+  </country>
+  <country>
+    <name>Paraguay</name>
+  </country>
+  <country>
+    <name>Peru</name>
+  </country>
+  <country>
+    <name>Suriname</name>
+  </country>
+  <country>
+    <name>Uruguay</name>
+  </country>
+  <country>
+    <name>Venezuela</name>
+  </country>
+  <country>
+    <name>Falkland Islands (UK)</name>
+  </country>
+  <country>
+    <name>French Guiana (France)</name>
+  </country>
+  <country>
+    <name>South Georgia and South Sandwich Islands (UK)</name>
+  </country>
+</countries>

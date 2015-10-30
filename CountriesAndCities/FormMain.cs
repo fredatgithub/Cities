@@ -762,30 +762,27 @@ namespace CountriesAndCities
       switch (comboBoxSelectContinent.SelectedItem.ToString())
       {
         case "Europe":
-          LoadComboBox(comboBoxSelectCountry, "Resources\\Countries.xml", "country");
+          LoadComboBox(comboBoxSelectCountry, "Resources\\countries-europe.xml", "country");
           break;
         case "North America":
-          LoadComboBox(comboBoxSelectCountry, "Resources\\Cities-USA.xml", "city");
+          LoadComboBox(comboBoxSelectCountry, "Resources\\countries-NorthAmerica.xml", "country");
           break;
         case "South America":
-          //LoadComboBox(comboBoxSelectCountry, "Resources\\Countries.xml", "country");
+          LoadComboBox(comboBoxSelectCountry, "Resources\\countries-SouthAmerica.xml", "country");
           break;
         case "Antartica":
           //LoadComboBox(comboBoxSelectCountry, "Resources\\Countries.xml", "country");
           break;
         case "Asia":
-          //LoadComboBox(comboBoxSelectCountry, "Resources\\Countries.xml", "country");
+          LoadComboBox(comboBoxSelectCountry, "Resources\\countries-asia.xml", "country");
           break;
         case "Africa":
-          //LoadComboBox(comboBoxSelectCountry, "Resources\\Countries.xml", "country");
+          LoadComboBox(comboBoxSelectCountry, "Resources\\countries-africa.xml", "country");
           break;
-        case "Australia":
-          //LoadComboBox(comboBoxSelectCountry, "Resources\\Countries.xml", "country");
+        case "Oceania":
+          LoadComboBox(comboBoxSelectCountry, "Resources\\Countries-Oceania.xml", "country");
           break;
-
-
       }
-
-    }
+   }
   }
 }
