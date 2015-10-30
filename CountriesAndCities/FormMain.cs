@@ -17,6 +17,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
+#define DEBUG
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -72,8 +73,10 @@ namespace CountriesAndCities
       GetWindowValue();
       LoadLanguages();
       SetLanguage(Settings.Default.LastLanguageUsed);
+      LoadComboBox(comboBoxSelectContinent, "Resources\\Continents.xml", "continent");
+      LoadComboBox(comboBoxSelectCountry, "Resources\\Countries.xml", "country");
     }
-
+    
     private void LoadConfigurationOptions()
     {
       _configurationOptions.Option1Name = Settings.Default.Option1Name;
@@ -139,6 +142,54 @@ namespace CountriesAndCities
           MessageBox.Show("Your xml file has duplicate like: " + i.name);
         }
       }
+    }
+
+    private static void LoadComboBox(ComboBox comboBox, string xmlfile, string tagName)
+    {
+      tagName = tagName.ToLower();
+      if (!File.Exists(xmlfile))
+      {
+        CreateXmlFile(xmlfile, tagName);
+      }
+
+      XDocument xDoc;
+      try
+      {
+        xDoc = XDocument.Load(xmlfile);
+      }
+      catch (Exception exception)
+      {
+        MessageBox.Show("Error while loading the " + xmlfile + " xml file " + exception.Message);
+        CreateXmlFile(xmlfile, tagName);
+        return;
+      }
+      var result = from node in xDoc.Descendants(tagName)
+                   where node.HasElements
+                   let xElementName = node.Element("name")
+                   where xElementName != null
+                   select new
+                   {
+                     name = xElementName.Value,
+                   };
+      comboBox.Items.Clear();
+      foreach (var i in result)
+      {
+        if (!comboBox.Items.Contains(i.name))
+        {
+          comboBox.Items.Add(i.name);
+        }
+#if DEBUG
+        else
+        {
+          MessageBox.Show("Your xml file has duplicate like: " + i.name);
+        }
+#endif
+      }
+    }
+
+    private static void CreateXmlFile(string xmlfile, string xmlContentType)
+    {
+      throw new NotImplementedException();
     }
 
     private static void CreateLanguageFile()
@@ -702,6 +753,39 @@ namespace CountriesAndCities
       {
         // do something
       }
+    }
+
+    private void comboBoxSelectContinent_SelectedIndexChanged(object sender, EventArgs e)
+    {
+      //Load country combobox according to the continent chosen
+      comboBoxSelectCountry.Items.Clear();
+      switch (comboBoxSelectContinent.SelectedItem.ToString())
+      {
+        case "Europe":
+          LoadComboBox(comboBoxSelectCountry, "Resources\\Countries.xml", "country");
+          break;
+        case "North America":
+          LoadComboBox(comboBoxSelectCountry, "Resources\\Cities-USA.xml", "city");
+          break;
+        case "South America":
+          //LoadComboBox(comboBoxSelectCountry, "Resources\\Countries.xml", "country");
+          break;
+        case "Antartica":
+          //LoadComboBox(comboBoxSelectCountry, "Resources\\Countries.xml", "country");
+          break;
+        case "Asia":
+          //LoadComboBox(comboBoxSelectCountry, "Resources\\Countries.xml", "country");
+          break;
+        case "Africa":
+          //LoadComboBox(comboBoxSelectCountry, "Resources\\Countries.xml", "country");
+          break;
+        case "Australia":
+          //LoadComboBox(comboBoxSelectCountry, "Resources\\Countries.xml", "country");
+          break;
+
+
+      }
+
     }
   }
 }

@@ -391,7 +391,7 @@
       this.comboBoxSelectCountry.Location = new System.Drawing.Point(191, 273);
       this.comboBoxSelectCountry.Name = "comboBoxSelectCountry";
       this.comboBoxSelectCountry.Size = new System.Drawing.Size(159, 28);
-      this.comboBoxSelectCountry.TabIndex = 2;
+      this.comboBoxSelectCountry.TabIndex = 22;
       this.comboBoxSelectCountry.Text = "Select a country";
       // 
       // labelSelectCountry
@@ -441,8 +441,9 @@
       this.comboBoxSelectContinent.Location = new System.Drawing.Point(15, 271);
       this.comboBoxSelectContinent.Name = "comboBoxSelectContinent";
       this.comboBoxSelectContinent.Size = new System.Drawing.Size(159, 28);
-      this.comboBoxSelectContinent.TabIndex = 6;
+      this.comboBoxSelectContinent.TabIndex = 2;
       this.comboBoxSelectContinent.Text = "Select a continent";
+      this.comboBoxSelectContinent.SelectedIndexChanged += new System.EventHandler(this.comboBoxSelectContinent_SelectedIndexChanged);
       // 
       // labelEnterContinent
       // 
