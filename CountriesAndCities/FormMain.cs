@@ -770,9 +770,6 @@ namespace CountriesAndCities
         case "South America":
           LoadComboBox(comboBoxSelectCountry, "Resources\\countries-SouthAmerica.xml", "country");
           break;
-        case "Antartica":
-          //LoadComboBox(comboBoxSelectCountry, "Resources\\Countries.xml", "country");
-          break;
         case "Asia":
           LoadComboBox(comboBoxSelectCountry, "Resources\\countries-asia.xml", "country");
           break;
