@@ -393,6 +393,7 @@
       this.comboBoxSelectCountry.Size = new System.Drawing.Size(159, 28);
       this.comboBoxSelectCountry.TabIndex = 22;
       this.comboBoxSelectCountry.Text = "Select a country";
+      this.comboBoxSelectCountry.SelectedIndexChanged += new System.EventHandler(this.comboBoxSelectCountry_SelectedIndexChanged);
       // 
       // labelSelectCountry
       // 

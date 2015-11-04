@@ -76,7 +76,7 @@ namespace CountriesAndCities
       LoadComboBox(comboBoxSelectContinent, "Resources\\Continents.xml", "continent");
       LoadComboBox(comboBoxSelectCountry, "Resources\\Countries.xml", "country");
     }
-    
+
     private void LoadConfigurationOptions()
     {
       _configurationOptions.Option1Name = Settings.Default.Option1Name;
@@ -780,6 +780,18 @@ namespace CountriesAndCities
           LoadComboBox(comboBoxSelectCountry, "Resources\\Countries-Oceania.xml", "country");
           break;
       }
-   }
+    }
+
+    private void comboBoxSelectCountry_SelectedIndexChanged(object sender, EventArgs e)
+    {
+      comboBoxSelectCity.Items.Clear();
+      switch (comboBoxSelectCountry.SelectedItem.ToString())
+      {
+        case "France":
+          LoadComboBox(comboBoxSelectCity, "Resources\\Cities-France.xml", "city");
+          break;
+
+      }
+    }
   }
 }
