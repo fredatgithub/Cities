@@ -784,12 +784,18 @@ namespace CountriesAndCities
 
     private void comboBoxSelectCountry_SelectedIndexChanged(object sender, EventArgs e)
     {
+      comboBoxSelectState.Items.Clear();
+      comboBoxSelectCounty.Items.Clear();
       comboBoxSelectCity.Items.Clear();
       switch (comboBoxSelectCountry.SelectedItem.ToString())
       {
         case "France":
           LoadComboBox(comboBoxSelectCity, "Resources\\Cities-France.xml", "city");
           break;
+        case "United States of America":
+          LoadComboBox(comboBoxSelectState, "Resources\\States-USA.xml", "state");
+          break;
+
 
       }
     }

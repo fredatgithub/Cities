@@ -114,7 +114,7 @@
     <Content Include="Resources\Continents.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Resources\counties.xml">
+    <Content Include="Resources\counties-USA.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Resources\countries-africa.xml">
@@ -139,7 +139,7 @@
     <Content Include="Resources\Countries.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Resources\States.xml">
+    <Content Include="Resources\States-USA.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Translations.xml">
