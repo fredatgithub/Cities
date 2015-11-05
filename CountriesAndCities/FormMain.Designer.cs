@@ -475,6 +475,7 @@
       this.comboBoxSelectState.Size = new System.Drawing.Size(159, 28);
       this.comboBoxSelectState.TabIndex = 9;
       this.comboBoxSelectState.Text = "Select a state";
+      this.comboBoxSelectState.SelectedIndexChanged += new System.EventHandler(this.comboBoxSelectState_SelectedIndexChanged);
       // 
       // labelSelectCounty
       // 

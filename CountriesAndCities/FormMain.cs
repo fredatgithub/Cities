@@ -795,8 +795,18 @@ namespace CountriesAndCities
         case "United States of America":
           LoadComboBox(comboBoxSelectState, "Resources\\States-USA.xml", "state");
           break;
+      }
+    }
 
-
+    private void comboBoxSelectState_SelectedIndexChanged(object sender, EventArgs e)
+    {
+      comboBoxSelectCounty.Items.Clear();
+      switch (comboBoxSelectState.SelectedItem.ToString())
+      {
+        case "Florida":
+          LoadComboBox(comboBoxSelectCounty, "Resources\\Counties-Florida.xml", "county");
+          break;
+        
       }
     }
   }
