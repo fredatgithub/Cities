@@ -1490,4 +1490,69 @@
     <englishValue>File modified</englishValue>
     <frenchValue>Fichier modifié</frenchValue>
   </term>
+  <term>
+    <name>One file</name>
+    <englishValue>One file</englishValue>
+    <frenchValue>Un fichier</frenchValue>
+  </term>
+  <term>
+    <name>Rename</name>
+    <englishValue>Rename</englishValue>
+    <frenchValue>Renommer</frenchValue>
+  </term>
+  <term>
+    <name>All files in</name>
+    <englishValue>All files in</englishValue>
+    <frenchValue>Tous les fichiers dans</frenchValue>
+  </term>
+  <term>
+    <name>Includes sub-directories</name>
+    <englishValue>Includes sub-directories</englishValue>
+    <frenchValue>Incluant les sous répertoires</frenchValue>
+  </term>
+  <term>
+    <name>Cut file every</name>
+    <englishValue>Cut file every</englishValue>
+    <frenchValue>Couper le fichier à chaque</frenchValue>
+  </term>
+  <term>
+    <name>MB</name>
+    <englishValue>MB</englishValue>
+    <frenchValue>MO</frenchValue>
+  </term>
+  <term>
+    <name>Delete source file after rename</name>
+    <englishValue>Delete source file after rename</englishValue>
+    <frenchValue>Effacer le fichier source après renommage</frenchValue>
+  </term>
+  <term>
+    <name>Wrong file name</name>
+    <englishValue>Wrong file name</englishValue>
+    <frenchValue>Mauvais nom de fichier</frenchValue>
+  </term>
+  <term>
+    <name>The file doesn't start with the word primes</name>
+    <englishValue>The file doesn't start with the word primes</englishValue>
+    <frenchValue>Le fichier ne commence pas par le mot primes</frenchValue>
+  </term>
+  <term>
+    <name>Nothing to do</name>
+    <englishValue>Nothing to do</englishValue>
+    <frenchValue>Rien à faire</frenchValue>
+  </term>
+  <term>
+    <name>The file name has a start number and you don't want it to be cut so there's nothing to do</name>
+    <englishValue>The file name has a start number and you don't want it to be cut so there's nothing to do</englishValue>
+    <frenchValue>Le nom du fichier a un nombre de début et vous ne voulez pas couper le fichier donc il n'y a rien à faire</frenchValue>
+  </term>
+  <term>
+    <name>The file name or the path is not correct</name>
+    <englishValue>The file name or the path is not correct</englishValue>
+    <frenchValue>Le nom du fichier ou le chemin n'est pas correct</frenchValue>
+  </term>
+  <term>
+    <name>File not correct</name>
+    <englishValue>File not correct</englishValue>
+    <frenchValue>Fichier non correct</frenchValue>
+  </term>
 </terms>
