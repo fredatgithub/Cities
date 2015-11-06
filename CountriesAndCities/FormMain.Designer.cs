@@ -388,7 +388,7 @@
       // 
       this.comboBoxSelectCountry.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
       this.comboBoxSelectCountry.FormattingEnabled = true;
-      this.comboBoxSelectCountry.Location = new System.Drawing.Point(191, 273);
+      this.comboBoxSelectCountry.Location = new System.Drawing.Point(191, 271);
       this.comboBoxSelectCountry.Name = "comboBoxSelectCountry";
       this.comboBoxSelectCountry.Size = new System.Drawing.Size(220, 28);
       this.comboBoxSelectCountry.TabIndex = 22;
@@ -399,7 +399,7 @@
       // 
       this.labelSelectCountry.AutoSize = true;
       this.labelSelectCountry.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      this.labelSelectCountry.Location = new System.Drawing.Point(188, 239);
+      this.labelSelectCountry.Location = new System.Drawing.Point(188, 237);
       this.labelSelectCountry.Name = "labelSelectCountry";
       this.labelSelectCountry.Size = new System.Drawing.Size(130, 20);
       this.labelSelectCountry.TabIndex = 3;
@@ -409,7 +409,7 @@
       // 
       this.labelSelectCity.AutoSize = true;
       this.labelSelectCity.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      this.labelSelectCity.Location = new System.Drawing.Point(915, 239);
+      this.labelSelectCity.Location = new System.Drawing.Point(915, 237);
       this.labelSelectCity.Name = "labelSelectCity";
       this.labelSelectCity.Size = new System.Drawing.Size(101, 20);
       this.labelSelectCity.TabIndex = 5;
@@ -419,7 +419,7 @@
       // 
       this.comboBoxSelectCity.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
       this.comboBoxSelectCity.FormattingEnabled = true;
-      this.comboBoxSelectCity.Location = new System.Drawing.Point(918, 273);
+      this.comboBoxSelectCity.Location = new System.Drawing.Point(918, 271);
       this.comboBoxSelectCity.Name = "comboBoxSelectCity";
       this.comboBoxSelectCity.Size = new System.Drawing.Size(221, 28);
       this.comboBoxSelectCity.TabIndex = 4;
