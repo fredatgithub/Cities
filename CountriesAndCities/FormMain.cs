@@ -72,9 +72,9 @@ namespace CountriesAndCities
       DisplayTitle();
       GetWindowValue();
       LoadLanguages();
-      SetLanguage(Settings.Default.LastLanguageUsed);
       LoadComboBox(comboBoxSelectContinent, "Resources\\Continents.xml", "continent");
       LoadComboBox(comboBoxSelectCountry, "Resources\\Countries.xml", "country");
+      SetLanguage(Settings.Default.LastLanguageUsed);
     }
 
     private void LoadConfigurationOptions()
@@ -712,7 +712,7 @@ namespace CountriesAndCities
 
     private void AdjustAllControls()
     {
-      AdjustControls(); // insert here all labels, textboxes and buttons, one method per line of controls
+      AdjustControls(); 
     }
 
     private void optionsToolStripMenuItem_Click(object sender, EventArgs e)
@@ -808,6 +808,27 @@ namespace CountriesAndCities
           break;
         
       }
+    }
+
+    private int LongestItemInCb(ComboBox cb)
+    {
+      int result = 0;
+      if (cb.Items.Count == 0)
+      {
+        return 0;
+      }
+
+      result = cb.Items[0].ToString().Length;
+      // return (from object item in cb.Items select item.ToString().Length).Concat(new[] {result}).Max();
+      foreach (var item in cb.Items)
+      {
+        if (item.ToString().Length > result)
+        {
+          result = item.ToString().Length;
+        }
+      }
+
+      return result;
     }
   }
 }

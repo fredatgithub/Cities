@@ -324,21 +324,21 @@
       this.SmallToolStripMenuItem.Checked = true;
       this.SmallToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
       this.SmallToolStripMenuItem.Name = "SmallToolStripMenuItem";
-      this.SmallToolStripMenuItem.Size = new System.Drawing.Size(129, 26);
+      this.SmallToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
       this.SmallToolStripMenuItem.Text = "Petit";
       this.SmallToolStripMenuItem.Click += new System.EventHandler(this.SmallToolStripMenuItem_Click);
       // 
       // MediumToolStripMenuItem
       // 
       this.MediumToolStripMenuItem.Name = "MediumToolStripMenuItem";
-      this.MediumToolStripMenuItem.Size = new System.Drawing.Size(129, 26);
+      this.MediumToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
       this.MediumToolStripMenuItem.Text = "Moyen";
       this.MediumToolStripMenuItem.Click += new System.EventHandler(this.MediumToolStripMenuItem_Click);
       // 
       // LargeToolStripMenuItem
       // 
       this.LargeToolStripMenuItem.Name = "LargeToolStripMenuItem";
-      this.LargeToolStripMenuItem.Size = new System.Drawing.Size(129, 26);
+      this.LargeToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
       this.LargeToolStripMenuItem.Text = "Grand";
       this.LargeToolStripMenuItem.Click += new System.EventHandler(this.LargeToolStripMenuItem_Click);
       // 
@@ -390,7 +390,7 @@
       this.comboBoxSelectCountry.FormattingEnabled = true;
       this.comboBoxSelectCountry.Location = new System.Drawing.Point(191, 273);
       this.comboBoxSelectCountry.Name = "comboBoxSelectCountry";
-      this.comboBoxSelectCountry.Size = new System.Drawing.Size(159, 28);
+      this.comboBoxSelectCountry.Size = new System.Drawing.Size(220, 28);
       this.comboBoxSelectCountry.TabIndex = 22;
       this.comboBoxSelectCountry.Text = "Select a country";
       this.comboBoxSelectCountry.SelectedIndexChanged += new System.EventHandler(this.comboBoxSelectCountry_SelectedIndexChanged);
@@ -409,7 +409,7 @@
       // 
       this.labelSelectCity.AutoSize = true;
       this.labelSelectCity.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      this.labelSelectCity.Location = new System.Drawing.Point(761, 239);
+      this.labelSelectCity.Location = new System.Drawing.Point(915, 239);
       this.labelSelectCity.Name = "labelSelectCity";
       this.labelSelectCity.Size = new System.Drawing.Size(101, 20);
       this.labelSelectCity.TabIndex = 5;
@@ -419,9 +419,9 @@
       // 
       this.comboBoxSelectCity.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
       this.comboBoxSelectCity.FormattingEnabled = true;
-      this.comboBoxSelectCity.Location = new System.Drawing.Point(764, 273);
+      this.comboBoxSelectCity.Location = new System.Drawing.Point(918, 273);
       this.comboBoxSelectCity.Name = "comboBoxSelectCity";
-      this.comboBoxSelectCity.Size = new System.Drawing.Size(159, 28);
+      this.comboBoxSelectCity.Size = new System.Drawing.Size(221, 28);
       this.comboBoxSelectCity.TabIndex = 4;
       this.comboBoxSelectCity.Text = "Select a city";
       // 
@@ -460,7 +460,7 @@
       // 
       this.labelSelectState.AutoSize = true;
       this.labelSelectState.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      this.labelSelectState.Location = new System.Drawing.Point(386, 237);
+      this.labelSelectState.Location = new System.Drawing.Point(414, 237);
       this.labelSelectState.Name = "labelSelectState";
       this.labelSelectState.Size = new System.Drawing.Size(112, 20);
       this.labelSelectState.TabIndex = 10;
@@ -470,9 +470,9 @@
       // 
       this.comboBoxSelectState.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
       this.comboBoxSelectState.FormattingEnabled = true;
-      this.comboBoxSelectState.Location = new System.Drawing.Point(389, 271);
+      this.comboBoxSelectState.Location = new System.Drawing.Point(417, 271);
       this.comboBoxSelectState.Name = "comboBoxSelectState";
-      this.comboBoxSelectState.Size = new System.Drawing.Size(159, 28);
+      this.comboBoxSelectState.Size = new System.Drawing.Size(230, 28);
       this.comboBoxSelectState.TabIndex = 9;
       this.comboBoxSelectState.Text = "Select a state";
       this.comboBoxSelectState.SelectedIndexChanged += new System.EventHandler(this.comboBoxSelectState_SelectedIndexChanged);
@@ -481,7 +481,7 @@
       // 
       this.labelSelectCounty.AutoSize = true;
       this.labelSelectCounty.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      this.labelSelectCounty.Location = new System.Drawing.Point(572, 237);
+      this.labelSelectCounty.Location = new System.Drawing.Point(659, 237);
       this.labelSelectCounty.Name = "labelSelectCounty";
       this.labelSelectCounty.Size = new System.Drawing.Size(124, 20);
       this.labelSelectCounty.TabIndex = 12;
@@ -491,9 +491,9 @@
       // 
       this.comboBoxSelectCounty.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
       this.comboBoxSelectCounty.FormattingEnabled = true;
-      this.comboBoxSelectCounty.Location = new System.Drawing.Point(575, 271);
+      this.comboBoxSelectCounty.Location = new System.Drawing.Point(662, 271);
       this.comboBoxSelectCounty.Name = "comboBoxSelectCounty";
-      this.comboBoxSelectCounty.Size = new System.Drawing.Size(159, 28);
+      this.comboBoxSelectCounty.Size = new System.Drawing.Size(227, 28);
       this.comboBoxSelectCounty.TabIndex = 11;
       this.comboBoxSelectCounty.Text = "Select a county";
       // 
