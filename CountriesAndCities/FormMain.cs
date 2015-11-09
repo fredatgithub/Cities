@@ -710,9 +710,31 @@ namespace CountriesAndCities
       }
     }
 
+    private void AdjustComboWithTextBoxes(params Control[] listOfControls)
+    {
+      if (listOfControls.Length == 0)
+      {
+        return;
+      }
+
+      int position = LongestItemInCb((ComboBox)listOfControls[0]) * 8 + 33; // 33 is the initial padding
+      for (int i = 1; i < listOfControls.Length; i = i + 2) // we skip the first one and skip textboxes
+      {
+        ComboBox box = listOfControls[i] as ComboBox;
+        if (box != null)
+        {
+          if (box.Items.Count != 0)
+          {
+            listOfControls[i].Left = position + 10;
+            position += LongestItemInCb((ComboBox)listOfControls[i]) * 8;
+          }
+        }
+      }
+    }
+
     private void AdjustAllControls()
     {
-      AdjustControls(); 
+      AdjustControls();
     }
 
     private void optionsToolStripMenuItem_Click(object sender, EventArgs e)
@@ -806,7 +828,7 @@ namespace CountriesAndCities
         case "Florida":
           LoadComboBox(comboBoxSelectCounty, "Resources\\Counties-Florida.xml", "county");
           break;
-        
+
       }
     }
 
