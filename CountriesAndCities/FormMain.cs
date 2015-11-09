@@ -718,7 +718,7 @@ namespace CountriesAndCities
       }
 
       int position = LongestItemInCb((ComboBox)listOfControls[0]) * 8 + 33; // 33 is the initial padding
-      for (int i = 1; i < listOfControls.Length; i = i + 2) // we skip the first one and skip textboxes
+      for (int i = 0; i < listOfControls.Length; i = i + 2) // we skip textboxes and labels
       {
         ComboBox box = listOfControls[i] as ComboBox;
         if (box != null)
@@ -727,6 +727,11 @@ namespace CountriesAndCities
           {
             listOfControls[i].Left = position + 10;
             position += LongestItemInCb((ComboBox)listOfControls[i]) * 8;
+          }
+          else
+          {
+            listOfControls[i].Left = position + 10;
+            position += listOfControls[i].Width;
           }
         }
       }
