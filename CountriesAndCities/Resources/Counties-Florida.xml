@@ -1,6 +1,204 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <counties>
   <county>
-    <name>Dade</name>
+    <name>Alachua county</name>
+  </county>
+  <county>
+    <name>Baker county</name>
+  </county>
+  <county>
+    <name>Bay county</name>
+  </county>
+  <county>
+    <name>Bradford county</name>
+  </county>
+  <county>
+    <name>Brevard county</name>
+  </county>
+  <county>
+    <name>Broward county</name>
+  </county>
+  <county>
+    <name>Calhoun county</name>
+  </county>
+  <county>
+    <name>charlotte county</name>
+  </county>
+  <county>
+    <name>Citrus county</name>
+  </county>
+  <county>
+    <name>Clay county</name>
+  </county>
+  <county>
+    <name>Collier county</name>
+  </county>
+  <county>
+    <name>Columbia county</name>
+  </county>
+  <county>
+    <name>DeSoto county</name>
+  </county>
+  <county>
+    <name>Dixie county</name>
+  </county>
+  <county>
+    <name>Duval county</name>
+  </county>
+  <county>
+    <name>Escambia county</name>
+  </county>
+  <county>
+    <name>Flagler county</name>
+  </county>
+  <county>
+    <name>Franklin county</name>
+  </county>
+  <county>
+    <name>Gadsden county</name>
+  </county>
+  <county>
+    <name>Gilchrist county</name>
+  </county>
+  <county>
+    <name>Glades county</name>
+  </county>
+  <county>
+    <name>Gulf county</name>
+  </county>
+  <county>
+    <name>Hamilton county</name>
+  </county>
+  <county>
+    <name>Hardee county</name>
+  </county>
+  <county>
+    <name>Hendry county</name>
+  </county>
+  <county>
+    <name>Hernando county</name>
+  </county>
+  <county>
+    <name>Highlands county</name>
+  </county>
+  <county>
+    <name>Hillsborough county</name>
+  </county>
+  <county>
+    <name>Holmes county</name>
+  </county>
+  <county>
+    <name>Indian River county</name>
+  </county>
+  <county>
+    <name>Jackson county</name>
+  </county>
+  <county>
+    <name>Jefferson county</name>
+  </county>
+  <county>
+    <name>Lafayette county</name>
+  </county>
+  <county>
+    <name>Lake county</name>
+  </county>
+  <county>
+    <name>Lee county</name>
+  </county>
+  <county>
+    <name>Leon county</name>
+  </county>
+  <county>
+    <name>Levy county</name>
+  </county>
+  <county>
+    <name>Liberty county</name>
+  </county>
+  <county>
+    <name>Madison county</name>
+  </county>
+  <county>
+    <name>Manatee county</name>
+  </county>
+  <county>
+    <name>Marion county</name>
+  </county>
+  <county>
+    <name>Martin county</name>
+  </county>
+  <county>
+    <name>Miami-Dade county</name>
+  </county>
+  <county>
+    <name>Monroe county</name>
+  </county>
+  <county>
+    <name>Nassau county</name>
+  </county>
+  <county>
+    <name>Okaloosa county</name>
+  </county>
+  <county>
+    <name>Okeechobee county</name>
+  </county>
+  <county>
+    <name>Orange county</name>
+  </county>
+  <county>
+    <name>Osceola county</name>
+  </county>
+  <county>
+    <name>Palm Beach county</name>
+  </county>
+  <county>
+    <name>Pasco county</name>
+  </county>
+  <county>
+    <name>Pinellas county</name>
+  </county>
+  <county>
+    <name>Polk county</name>
+  </county>
+  <county>
+    <name>Putnam county</name>
+  </county>
+  <county>
+    <name>St. Johns county</name>
+  </county>
+  <county>
+    <name>St. Lucie county</name>
+  </county>
+  <county>
+    <name>Santa Rosa county</name>
+  </county>
+  <county>
+    <name>Sarasota county</name>
+  </county>
+  <county>
+    <name>Seminole county</name>
+  </county>
+  <county>
+    <name>Sumter county</name>
+  </county>
+  <county>
+    <name>Suwannee county</name>
+  </county>
+  <county>
+    <name>Taylor county</name>
+  </county>
+  <county>
+    <name>Union county</name>
+  </county>
+  <county>
+    <name>Volusia county</name>
+  </county>
+  <county>
+    <name>Wakulla county</name>
+  </county>
+  <county>
+    <name>Walton county</name>
+  </county>
+  <county>
+    <name>Washington county</name>
   </county>
 </counties>

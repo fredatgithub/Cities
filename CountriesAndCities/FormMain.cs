@@ -717,29 +717,40 @@ namespace CountriesAndCities
         return;
       }
 
-      const int offset = 10;
+      const int offset = 15;
       const int fontWidth = 9;
-      //int position = LongestItemInCb((ComboBox)listOfControls[1]) * fontWidth + 33; // 33 is the initial padding
       int position = 33;
       for (int i = 1; i < listOfControls.Length; i = i + 2) // we skip textboxes and labels
       {
         ComboBox box = listOfControls[i] as ComboBox;
         if (box != null)
         {
+          if (i == 1)
+          {
+            position += LongestItemInCb((ComboBox)listOfControls[i]) * fontWidth + offset;
+            continue;
+          }
+
           if (box.Items.Count != 0)
           {
             listOfControls[i].Width = LongestItemInCb((ComboBox) listOfControls[i]) * fontWidth;
-            listOfControls[i].Left = position + offset;
-            listOfControls[i - 1].Left = position + offset;
-            position += LongestItemInCb((ComboBox)listOfControls[i]) * fontWidth;
+            listOfControls[i].Left = Maximum(position + offset, listOfControls[i - 1].Width);
+            listOfControls[i - 1].Left = Maximum(position + offset, listOfControls[i - 1].Width);
+            position += LongestItemInCb((ComboBox)listOfControls[i]) * fontWidth + offset;
           }
           else
           {
-            listOfControls[i].Left = position + offset;
-            position += listOfControls[i].Width;
+            listOfControls[i].Left = Maximum(position + offset, listOfControls[i - 1].Width);
+            listOfControls[i - 1].Left = Maximum(position + offset, listOfControls[i - 1].Width);
+            position += listOfControls[i].Width + offset;
           }
         }
       }
+    }
+
+    private static int Maximum(int value1, int value2)
+    {
+      return value1 > value2 ? value1 : value2;
     }
 
     private void AdjustAllControls()
@@ -792,10 +803,18 @@ namespace CountriesAndCities
       }
     }
 
+    private void ClearComboBoxes(params ComboBox[] listOfComboBoxes)
+    {
+      foreach (ComboBox box in listOfComboBoxes)
+      {
+        box.Items.Clear();
+      }
+    }
+
     private void comboBoxSelectContinent_SelectedIndexChanged(object sender, EventArgs e)
     {
       //Load country combobox according to the continent chosen
-      comboBoxSelectCountry.Items.Clear();
+      ClearComboBoxes(comboBoxSelectCountry, comboBoxSelectState, comboBoxSelectCounty, comboBoxSelectCity);
       switch (comboBoxSelectContinent.SelectedItem.ToString())
       {
         case "Europe":
@@ -817,15 +836,13 @@ namespace CountriesAndCities
           LoadComboBox(comboBoxSelectCountry, "Resources\\Countries-Oceania.xml", "country");
           break;
       }
-
+      
       AdjustAllControls();
     }
 
     private void comboBoxSelectCountry_SelectedIndexChanged(object sender, EventArgs e)
     {
-      comboBoxSelectState.Items.Clear();
-      comboBoxSelectCounty.Items.Clear();
-      comboBoxSelectCity.Items.Clear();
+      ClearComboBoxes(comboBoxSelectState, comboBoxSelectCounty, comboBoxSelectCity);
       switch (comboBoxSelectCountry.SelectedItem.ToString())
       {
         case "France":
@@ -841,7 +858,7 @@ namespace CountriesAndCities
 
     private void comboBoxSelectState_SelectedIndexChanged(object sender, EventArgs e)
     {
-      comboBoxSelectCounty.Items.Clear();
+      ClearComboBoxes(comboBoxSelectCounty, comboBoxSelectCity);
       switch (comboBoxSelectState.SelectedItem.ToString())
       {
         case "Florida":
@@ -876,6 +893,7 @@ namespace CountriesAndCities
 
     private void comboBoxSelectCounty_SelectedIndexChanged(object sender, EventArgs e)
     {
+      ClearComboBoxes(comboBoxSelectCity);
       // switch
 
       AdjustAllControls();
