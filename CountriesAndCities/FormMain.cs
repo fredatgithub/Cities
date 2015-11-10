@@ -181,7 +181,7 @@ namespace CountriesAndCities
 #if DEBUG
         else
         {
-          MessageBox.Show("Your xml file has duplicate like: " + i.name);
+          //MessageBox.Show("Your xml file has duplicate like: " + i.name);
         }
 #endif
       }
@@ -710,27 +710,32 @@ namespace CountriesAndCities
       }
     }
 
-    private void AdjustComboWithTextBoxes(params Control[] listOfControls)
+    private static void AdjustComboWithTextBoxes(params Control[] listOfControls)
     {
       if (listOfControls.Length == 0)
       {
         return;
       }
 
-      int position = LongestItemInCb((ComboBox)listOfControls[0]) * 8 + 33; // 33 is the initial padding
-      for (int i = 0; i < listOfControls.Length; i = i + 2) // we skip textboxes and labels
+      const int offset = 10;
+      const int fontWidth = 9;
+      //int position = LongestItemInCb((ComboBox)listOfControls[1]) * fontWidth + 33; // 33 is the initial padding
+      int position = 33;
+      for (int i = 1; i < listOfControls.Length; i = i + 2) // we skip textboxes and labels
       {
         ComboBox box = listOfControls[i] as ComboBox;
         if (box != null)
         {
           if (box.Items.Count != 0)
           {
-            listOfControls[i].Left = position + 10;
-            position += LongestItemInCb((ComboBox)listOfControls[i]) * 8;
+            listOfControls[i].Width = LongestItemInCb((ComboBox) listOfControls[i]) * fontWidth;
+            listOfControls[i].Left = position + offset;
+            listOfControls[i - 1].Left = position + offset;
+            position += LongestItemInCb((ComboBox)listOfControls[i]) * fontWidth;
           }
           else
           {
-            listOfControls[i].Left = position + 10;
+            listOfControls[i].Left = position + offset;
             position += listOfControls[i].Width;
           }
         }
@@ -739,7 +744,12 @@ namespace CountriesAndCities
 
     private void AdjustAllControls()
     {
-      AdjustControls();
+      //AdjustControls();
+      AdjustComboWithTextBoxes(labelSelectContinent, comboBoxSelectContinent,
+        labelSelectCountry, comboBoxSelectCountry,
+        labelSelectState, comboBoxSelectState,
+        labelSelectCounty, comboBoxSelectCounty,
+        labelSelectCity, comboBoxSelectCity);
     }
 
     private void optionsToolStripMenuItem_Click(object sender, EventArgs e)
@@ -807,6 +817,8 @@ namespace CountriesAndCities
           LoadComboBox(comboBoxSelectCountry, "Resources\\Countries-Oceania.xml", "country");
           break;
       }
+
+      AdjustAllControls();
     }
 
     private void comboBoxSelectCountry_SelectedIndexChanged(object sender, EventArgs e)
@@ -823,6 +835,8 @@ namespace CountriesAndCities
           LoadComboBox(comboBoxSelectState, "Resources\\States-USA.xml", "state");
           break;
       }
+
+      AdjustAllControls();
     }
 
     private void comboBoxSelectState_SelectedIndexChanged(object sender, EventArgs e)
@@ -835,9 +849,11 @@ namespace CountriesAndCities
           break;
 
       }
+
+      AdjustAllControls();
     }
 
-    private int LongestItemInCb(ComboBox cb)
+    private static int LongestItemInCb(ComboBox cb)
     {
       int result = 0;
       if (cb.Items.Count == 0)
@@ -856,6 +872,18 @@ namespace CountriesAndCities
       }
 
       return result;
+    }
+
+    private void comboBoxSelectCounty_SelectedIndexChanged(object sender, EventArgs e)
+    {
+      // switch
+
+      AdjustAllControls();
+    }
+
+    private void comboBoxSelectCity_SelectedIndexChanged(object sender, EventArgs e)
+    {
+      AdjustAllControls();
     }
   }
 }

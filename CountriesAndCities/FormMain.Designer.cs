@@ -324,21 +324,21 @@
       this.SmallToolStripMenuItem.Checked = true;
       this.SmallToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
       this.SmallToolStripMenuItem.Name = "SmallToolStripMenuItem";
-      this.SmallToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+      this.SmallToolStripMenuItem.Size = new System.Drawing.Size(129, 26);
       this.SmallToolStripMenuItem.Text = "Petit";
       this.SmallToolStripMenuItem.Click += new System.EventHandler(this.SmallToolStripMenuItem_Click);
       // 
       // MediumToolStripMenuItem
       // 
       this.MediumToolStripMenuItem.Name = "MediumToolStripMenuItem";
-      this.MediumToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+      this.MediumToolStripMenuItem.Size = new System.Drawing.Size(129, 26);
       this.MediumToolStripMenuItem.Text = "Moyen";
       this.MediumToolStripMenuItem.Click += new System.EventHandler(this.MediumToolStripMenuItem_Click);
       // 
       // LargeToolStripMenuItem
       // 
       this.LargeToolStripMenuItem.Name = "LargeToolStripMenuItem";
-      this.LargeToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+      this.LargeToolStripMenuItem.Size = new System.Drawing.Size(129, 26);
       this.LargeToolStripMenuItem.Text = "Grand";
       this.LargeToolStripMenuItem.Click += new System.EventHandler(this.LargeToolStripMenuItem_Click);
       // 
@@ -424,6 +424,7 @@
       this.comboBoxSelectCity.Size = new System.Drawing.Size(221, 28);
       this.comboBoxSelectCity.TabIndex = 4;
       this.comboBoxSelectCity.Text = "Select a city";
+      this.comboBoxSelectCity.SelectedIndexChanged += new System.EventHandler(this.comboBoxSelectCity_SelectedIndexChanged);
       // 
       // labelSelectContinent
       // 
@@ -496,6 +497,7 @@
       this.comboBoxSelectCounty.Size = new System.Drawing.Size(227, 28);
       this.comboBoxSelectCounty.TabIndex = 11;
       this.comboBoxSelectCounty.Text = "Select a county";
+      this.comboBoxSelectCounty.SelectedIndexChanged += new System.EventHandler(this.comboBoxSelectCounty_SelectedIndexChanged);
       // 
       // textBoxEnterContinent
       // 
