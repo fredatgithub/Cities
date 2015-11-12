@@ -73,8 +73,8 @@ namespace CountriesAndCities
       GetWindowValue();
       LoadLanguages();
       LoadComboBox(comboBoxSelectContinent, "Resources\\Continents.xml", "continent");
-      LoadComboBox(comboBoxSelectCountry, "Resources\\Countries.xml", "country");
       SetLanguage(Settings.Default.LastLanguageUsed);
+      AdjustAllControls();
     }
 
     private void LoadConfigurationOptions()
@@ -761,6 +761,20 @@ namespace CountriesAndCities
         labelSelectState, comboBoxSelectState,
         labelSelectCounty, comboBoxSelectCounty,
         labelSelectCity, comboBoxSelectCity);
+      AlignControls(comboBoxSelectContinent, labelEnterContinent, textBoxEnterContinent, labelSelectContinent);
+      AlignControls(comboBoxSelectCountry, labelEnterCountry, textBoxEnterCountry, labelSelectCountry);
+      AlignControls(comboBoxSelectState, labelEnterState, textBoxEnterState, labelSelectState);
+      AlignControls(comboBoxSelectCounty, labelEnterCounty, textBoxEnterCounty, labelSelectCounty);
+      AlignControls(comboBoxSelectCity, labelEnterCity, textBoxEnterCity, labelSelectCity);
+    }
+
+    private static void AlignControls(Control masterControl, params Control[] listOfSlaveControls)
+    {
+      foreach (Control control in listOfSlaveControls)
+      {
+        control.Left = masterControl.Left;
+        control.Width = masterControl.Width;
+      }
     }
 
     private void optionsToolStripMenuItem_Click(object sender, EventArgs e)
@@ -818,7 +832,7 @@ namespace CountriesAndCities
       switch (comboBoxSelectContinent.SelectedItem.ToString())
       {
         case "Europe":
-          LoadComboBox(comboBoxSelectCountry, "Resources\\countries-europe.xml", "country");
+          LoadComboBox(comboBoxSelectCountry, "Resources\\Countries-Europe.xml", "country");
           break;
         case "North America":
           LoadComboBox(comboBoxSelectCountry, "Resources\\countries-NorthAmerica.xml", "country");

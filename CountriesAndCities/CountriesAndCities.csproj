@@ -243,7 +243,7 @@
     <Content Include="Resources\Counties-Texas.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Resources\counties-USA.xml">
+    <Content Include="Resources\Counties-USA.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Resources\Counties-Utah.xml">
@@ -267,32 +267,31 @@
     <Content Include="Resources\Counties-Wyoming.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Resources\countries-africa.xml">
+    <Content Include="Resources\Countries-africa.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Resources\countries-all.xml" />
-    <Content Include="Resources\countries-asia.xml">
+    <Content Include="Resources\Countries-all.xml" />
+    <Content Include="Resources\Countries-asia.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Resources\countries-europe.xml">
+    <Content Include="Resources\Countries-Europe.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Resources\countries-NorthAmerica.xml">
+    <Content Include="Resources\Countries-NorthAmerica.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Resources\Countries-Oceania.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Resources\countries-SouthAmerica.xml">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Resources\Countries.xml">
+    <Content Include="Resources\Countries-SouthAmerica.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Resources\States-USA.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Translations.xml" />
+    <Content Include="Translations.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

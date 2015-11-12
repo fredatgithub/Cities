@@ -80,11 +80,11 @@
       this.textBoxEnterCountry = new System.Windows.Forms.TextBox();
       this.labelEnterCountry = new System.Windows.Forms.Label();
       this.textBoxEnterState = new System.Windows.Forms.TextBox();
-      this.label2 = new System.Windows.Forms.Label();
+      this.labelEnterState = new System.Windows.Forms.Label();
       this.textBoxEnterCounty = new System.Windows.Forms.TextBox();
-      this.label3 = new System.Windows.Forms.Label();
+      this.labelEnterCounty = new System.Windows.Forms.Label();
       this.textBoxEnterCity = new System.Windows.Forms.TextBox();
-      this.label4 = new System.Windows.Forms.Label();
+      this.labelEnterCity = new System.Windows.Forms.Label();
       this.menuStrip1.SuspendLayout();
       this.SuspendLayout();
       // 
@@ -530,15 +530,15 @@
       this.textBoxEnterState.Size = new System.Drawing.Size(158, 22);
       this.textBoxEnterState.TabIndex = 17;
       // 
-      // label2
+      // labelEnterState
       // 
-      this.label2.AutoSize = true;
-      this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      this.label2.Location = new System.Drawing.Point(386, 82);
-      this.label2.Name = "label2";
-      this.label2.Size = new System.Drawing.Size(105, 20);
-      this.label2.TabIndex = 16;
-      this.label2.Text = "Enter a state";
+      this.labelEnterState.AutoSize = true;
+      this.labelEnterState.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+      this.labelEnterState.Location = new System.Drawing.Point(386, 82);
+      this.labelEnterState.Name = "labelEnterState";
+      this.labelEnterState.Size = new System.Drawing.Size(105, 20);
+      this.labelEnterState.TabIndex = 16;
+      this.labelEnterState.Text = "Enter a state";
       // 
       // textBoxEnterCounty
       // 
@@ -547,15 +547,15 @@
       this.textBoxEnterCounty.Size = new System.Drawing.Size(158, 22);
       this.textBoxEnterCounty.TabIndex = 19;
       // 
-      // label3
+      // labelEnterCounty
       // 
-      this.label3.AutoSize = true;
-      this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      this.label3.Location = new System.Drawing.Point(572, 82);
-      this.label3.Name = "label3";
-      this.label3.Size = new System.Drawing.Size(117, 20);
-      this.label3.TabIndex = 18;
-      this.label3.Text = "Enter a county";
+      this.labelEnterCounty.AutoSize = true;
+      this.labelEnterCounty.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+      this.labelEnterCounty.Location = new System.Drawing.Point(572, 82);
+      this.labelEnterCounty.Name = "labelEnterCounty";
+      this.labelEnterCounty.Size = new System.Drawing.Size(117, 20);
+      this.labelEnterCounty.TabIndex = 18;
+      this.labelEnterCounty.Text = "Enter a county";
       // 
       // textBoxEnterCity
       // 
@@ -564,15 +564,15 @@
       this.textBoxEnterCity.Size = new System.Drawing.Size(158, 22);
       this.textBoxEnterCity.TabIndex = 21;
       // 
-      // label4
+      // labelEnterCity
       // 
-      this.label4.AutoSize = true;
-      this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      this.label4.Location = new System.Drawing.Point(761, 82);
-      this.label4.Name = "label4";
-      this.label4.Size = new System.Drawing.Size(94, 20);
-      this.label4.TabIndex = 20;
-      this.label4.Text = "Enter a city";
+      this.labelEnterCity.AutoSize = true;
+      this.labelEnterCity.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+      this.labelEnterCity.Location = new System.Drawing.Point(761, 82);
+      this.labelEnterCity.Name = "labelEnterCity";
+      this.labelEnterCity.Size = new System.Drawing.Size(94, 20);
+      this.labelEnterCity.TabIndex = 20;
+      this.labelEnterCity.Text = "Enter a city";
       // 
       // FormMain
       // 
@@ -580,11 +580,11 @@
       this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
       this.ClientSize = new System.Drawing.Size(1181, 534);
       this.Controls.Add(this.textBoxEnterCity);
-      this.Controls.Add(this.label4);
+      this.Controls.Add(this.labelEnterCity);
       this.Controls.Add(this.textBoxEnterCounty);
-      this.Controls.Add(this.label3);
+      this.Controls.Add(this.labelEnterCounty);
       this.Controls.Add(this.textBoxEnterState);
-      this.Controls.Add(this.label2);
+      this.Controls.Add(this.labelEnterState);
       this.Controls.Add(this.textBoxEnterCountry);
       this.Controls.Add(this.labelEnterCountry);
       this.Controls.Add(this.textBoxEnterContinent);
@@ -668,10 +668,10 @@
     private System.Windows.Forms.TextBox textBoxEnterCountry;
     private System.Windows.Forms.Label labelEnterCountry;
     private System.Windows.Forms.TextBox textBoxEnterState;
-    private System.Windows.Forms.Label label2;
+    private System.Windows.Forms.Label labelEnterState;
     private System.Windows.Forms.TextBox textBoxEnterCounty;
-    private System.Windows.Forms.Label label3;
+    private System.Windows.Forms.Label labelEnterCounty;
     private System.Windows.Forms.TextBox textBoxEnterCity;
-    private System.Windows.Forms.Label label4;
+    private System.Windows.Forms.Label labelEnterCity;
   }
 }
