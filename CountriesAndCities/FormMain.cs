@@ -104,7 +104,9 @@ namespace CountriesAndCities
       }
       catch (Exception exception)
       {
-        MessageBox.Show("Error while loading the " + Settings.Default.LanguageFileName + " xml file " + exception.Message);
+        MessageBox.Show(Resources.Error_while_loading_the + Punctuation.OneSpace +
+          Settings.Default.LanguageFileName + Punctuation.OneSpace + Resources.XML_file +
+          Punctuation.OneSpace + exception.Message);
         CreateLanguageFile();
         return;
       }
@@ -130,7 +132,7 @@ namespace CountriesAndCities
         }
         else
         {
-          MessageBox.Show("Your xml file has duplicate like: " + i.name);
+          MessageBox.Show(Resources.Your_XML_file_has_duplicate_like + Punctuation.OneSpace + i.name);
         }
 
         if (!_languageDicoFr.ContainsKey(i.name))
@@ -139,7 +141,7 @@ namespace CountriesAndCities
         }
         else
         {
-          MessageBox.Show("Your xml file has duplicate like: " + i.name);
+          MessageBox.Show(Resources.Your_XML_file_has_duplicate_like + Punctuation.OneSpace + i.name);
         }
       }
     }
@@ -159,7 +161,8 @@ namespace CountriesAndCities
       }
       catch (Exception exception)
       {
-        MessageBox.Show("Error while loading the " + xmlfile + " xml file " + exception.Message);
+        MessageBox.Show(Resources.Error_while_loading_the + xmlfile +
+          Punctuation.OneSpace + Resources.XML_file + Punctuation.OneSpace + exception.Message);
         CreateXmlFile(xmlfile, tagName);
         return;
       }
@@ -460,6 +463,17 @@ namespace CountriesAndCities
           MediumToolStripMenuItem.Text = _languageDicoEn["Medium"];
           LargeToolStripMenuItem.Text = _languageDicoEn["Large"];
 
+          labelSelectContinent.Text = _languageDicoEn["Select"] + Punctuation.OneSpace + _languageDicoEn["a continent"];
+          labelSelectCountry.Text = _languageDicoEn["Select"] + Punctuation.OneSpace + _languageDicoEn["a country"];
+          labelSelectState.Text = _languageDicoEn["Select"] + Punctuation.OneSpace + _languageDicoEn["a state"];
+          labelSelectCounty.Text = _languageDicoEn["Select"] + Punctuation.OneSpace + _languageDicoEn["a county"];
+          labelSelectCity.Text = _languageDicoEn["Select"] + Punctuation.OneSpace + _languageDicoEn["a city"];
+          labelEnterContinent.Text = _languageDicoEn["Enter"] + Punctuation.OneSpace + _languageDicoEn["a continent"];
+          labelEnterCountry.Text = _languageDicoEn["Enter"] + Punctuation.OneSpace + _languageDicoEn["a country"];
+          labelEnterState.Text = _languageDicoEn["Enter"] + Punctuation.OneSpace + _languageDicoEn["a state"];
+          labelEnterCounty.Text = _languageDicoEn["Enter"] + Punctuation.OneSpace + _languageDicoEn["a county"];
+          labelEnterCity.Text = _languageDicoEn["Enter"] + Punctuation.OneSpace + _languageDicoEn["a city"];
+          AlignAllControls();
 
           _currentLanguage = "English";
           break;
@@ -497,6 +511,17 @@ namespace CountriesAndCities
           MediumToolStripMenuItem.Text = _languageDicoFr["Medium"];
           LargeToolStripMenuItem.Text = _languageDicoFr["Large"];
 
+          labelSelectContinent.Text = _languageDicoFr["Select"] + Punctuation.OneSpace +_languageDicoFr["a continent"];
+          labelSelectCountry.Text = _languageDicoFr["Select"] + Punctuation.OneSpace + _languageDicoFr["a country"];
+          labelSelectState.Text = _languageDicoFr["Select"] + Punctuation.OneSpace + _languageDicoFr["a state"];
+          labelSelectCounty.Text = _languageDicoFr["Select"] + Punctuation.OneSpace + _languageDicoFr["a county"];
+          labelSelectCity.Text = _languageDicoFr["Select"] + Punctuation.OneSpace + _languageDicoFr["a city"];
+          labelEnterContinent.Text = _languageDicoFr["Enter"] + Punctuation.OneSpace + _languageDicoFr["a continent"];
+          labelEnterCountry.Text = _languageDicoFr["Enter"] + Punctuation.OneSpace + _languageDicoFr["a country"];
+          labelEnterState.Text = _languageDicoFr["Enter"] + Punctuation.OneSpace + _languageDicoFr["a state"];
+          labelEnterCounty.Text = _languageDicoFr["Enter"] + Punctuation.OneSpace + _languageDicoFr["a county"];
+          labelEnterCity.Text = _languageDicoFr["Enter"] + Punctuation.OneSpace + _languageDicoFr["a city"];
+          AlignAllControls();
           _currentLanguage = "French";
           break;
         default:
@@ -761,11 +786,7 @@ namespace CountriesAndCities
         labelSelectState, comboBoxSelectState,
         labelSelectCounty, comboBoxSelectCounty,
         labelSelectCity, comboBoxSelectCity);
-      AlignControls(comboBoxSelectContinent, labelEnterContinent, textBoxEnterContinent, labelSelectContinent);
-      AlignControls(comboBoxSelectCountry, labelEnterCountry, textBoxEnterCountry, labelSelectCountry);
-      AlignControls(comboBoxSelectState, labelEnterState, textBoxEnterState, labelSelectState);
-      AlignControls(comboBoxSelectCounty, labelEnterCounty, textBoxEnterCounty, labelSelectCounty);
-      AlignControls(comboBoxSelectCity, labelEnterCity, textBoxEnterCity, labelSelectCity);
+      AlignAllControls();
     }
 
     private static void AlignControls(Control masterControl, params Control[] listOfSlaveControls)
@@ -775,6 +796,15 @@ namespace CountriesAndCities
         control.Left = masterControl.Left;
         control.Width = masterControl.Width;
       }
+    }
+
+    private void AlignAllControls()
+    {
+      AlignControls(comboBoxSelectContinent, labelEnterContinent, textBoxEnterContinent, labelSelectContinent);
+      AlignControls(comboBoxSelectCountry, labelEnterCountry, textBoxEnterCountry, labelSelectCountry);
+      AlignControls(comboBoxSelectState, labelEnterState, textBoxEnterState, labelSelectState);
+      AlignControls(comboBoxSelectCounty, labelEnterCounty, textBoxEnterCounty, labelSelectCounty);
+      AlignControls(comboBoxSelectCity, labelEnterCity, textBoxEnterCity, labelSelectCity);
     }
 
     private void optionsToolStripMenuItem_Click(object sender, EventArgs e)

@@ -1555,4 +1555,39 @@
     <englishValue>File not correct</englishValue>
     <frenchValue>Fichier non correct</frenchValue>
   </term>
+  <term>
+    <name>Select</name>
+    <englishValue>Select</englishValue>
+    <frenchValue>Sélectionner</frenchValue>
+  </term>
+  <term>
+    <name>Enter</name>
+    <englishValue>Enter</englishValue>
+    <frenchValue>Entrez</frenchValue>
+  </term>
+  <term>
+    <name>a continent</name>
+    <englishValue>a continent</englishValue>
+    <frenchValue>un continent</frenchValue>
+  </term>
+  <term>
+    <name>a country</name>
+    <englishValue>a country</englishValue>
+    <frenchValue>un pays</frenchValue>
+  </term>
+  <term>
+    <name>a state</name>
+    <englishValue>a state</englishValue>
+    <frenchValue>un état</frenchValue>
+  </term>
+  <term>
+    <name>a county</name>
+    <englishValue>a county</englishValue>
+    <frenchValue>un comté</frenchValue>
+  </term>
+  <term>
+    <name>a city</name>
+    <englishValue>a city</englishValue>
+    <frenchValue>une ville</frenchValue>
+  </term>
 </terms>
