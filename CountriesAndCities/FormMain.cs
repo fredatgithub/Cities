@@ -473,6 +473,7 @@ namespace CountriesAndCities
           labelEnterState.Text = _languageDicoEn["Enter"] + Punctuation.OneSpace + _languageDicoEn["a state"];
           labelEnterCounty.Text = _languageDicoEn["Enter"] + Punctuation.OneSpace + _languageDicoEn["a county"];
           labelEnterCity.Text = _languageDicoEn["Enter"] + Punctuation.OneSpace + _languageDicoEn["a city"];
+          AdjustAllControls();
           AlignAllControls();
 
           _currentLanguage = "English";
@@ -521,6 +522,7 @@ namespace CountriesAndCities
           labelEnterState.Text = _languageDicoFr["Enter"] + Punctuation.OneSpace + _languageDicoFr["a state"];
           labelEnterCounty.Text = _languageDicoFr["Enter"] + Punctuation.OneSpace + _languageDicoFr["a county"];
           labelEnterCity.Text = _languageDicoFr["Enter"] + Punctuation.OneSpace + _languageDicoFr["a city"];
+          AdjustAllControls();
           AlignAllControls();
           _currentLanguage = "French";
           break;
@@ -752,16 +754,21 @@ namespace CountriesAndCities
         {
           if (i == 1)
           {
-            position += LongestItemInCb((ComboBox)listOfControls[i]) * fontWidth + offset;
+            position += Maximum(LongestItemInCb((ComboBox)listOfControls[i]) * fontWidth + offset, 
+              listOfControls[0].Width);
+            listOfControls[1].Width = Maximum(LongestItemInCb((ComboBox)listOfControls[1]) * fontWidth,
+              listOfControls[0].Width);
             continue;
           }
 
           if (box.Items.Count != 0)
           {
-            listOfControls[i].Width = LongestItemInCb((ComboBox) listOfControls[i]) * fontWidth;
+            listOfControls[i].Width = Maximum(LongestItemInCb((ComboBox) listOfControls[i]) * fontWidth,
+              listOfControls[i - 1].Width);
             listOfControls[i].Left = Maximum(position + offset, listOfControls[i - 1].Width);
             listOfControls[i - 1].Left = Maximum(position + offset, listOfControls[i - 1].Width);
-            position += LongestItemInCb((ComboBox)listOfControls[i]) * fontWidth + offset;
+            position += Maximum(LongestItemInCb((ComboBox)listOfControls[i]) * fontWidth + offset,
+              listOfControls[i - 1].Width+ offset) ;
           }
           else
           {
@@ -780,7 +787,6 @@ namespace CountriesAndCities
 
     private void AdjustAllControls()
     {
-      //AdjustControls();
       AdjustComboWithTextBoxes(labelSelectContinent, comboBoxSelectContinent,
         labelSelectCountry, comboBoxSelectCountry,
         labelSelectState, comboBoxSelectState,
@@ -847,11 +853,12 @@ namespace CountriesAndCities
       }
     }
 
-    private void ClearComboBoxes(params ComboBox[] listOfComboBoxes)
+    private static void ClearComboBoxes(params ComboBox[] listOfComboBoxes)
     {
       foreach (ComboBox box in listOfComboBoxes)
       {
         box.Items.Clear();
+        box.Text = string.Empty;
       }
     }
 
@@ -880,8 +887,14 @@ namespace CountriesAndCities
           LoadComboBox(comboBoxSelectCountry, "Resources\\Countries-Oceania.xml", "country");
           break;
       }
-      
+
+      SetComboText(comboBoxSelectCountry, "a country");
       AdjustAllControls();
+    }
+
+    private void SetComboText(ComboBox box,string area)
+    {
+      box.Text = Translate("Select") + Punctuation.OneSpace + Translate(area);
     }
 
     private void comboBoxSelectCountry_SelectedIndexChanged(object sender, EventArgs e)
@@ -891,9 +904,11 @@ namespace CountriesAndCities
       {
         case "France":
           LoadComboBox(comboBoxSelectCity, "Resources\\Cities-France.xml", "city");
+          SetComboText(comboBoxSelectCity, "a city");
           break;
         case "United States of America":
           LoadComboBox(comboBoxSelectState, "Resources\\States-USA.xml", "state");
+          SetComboText(comboBoxSelectState, "a state");
           break;
       }
 
@@ -907,6 +922,7 @@ namespace CountriesAndCities
       {
         case "Florida":
           LoadComboBox(comboBoxSelectCounty, "Resources\\Counties-Florida.xml", "county");
+          SetComboText(comboBoxSelectCounty, "a county");
           break;
 
       }
