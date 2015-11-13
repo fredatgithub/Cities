@@ -525,7 +525,7 @@
       // 
       // textBoxEnterState
       // 
-      this.textBoxEnterState.Location = new System.Drawing.Point(384, 105);
+      this.textBoxEnterState.Location = new System.Drawing.Point(417, 105);
       this.textBoxEnterState.Name = "textBoxEnterState";
       this.textBoxEnterState.Size = new System.Drawing.Size(158, 22);
       this.textBoxEnterState.TabIndex = 17;
@@ -534,7 +534,7 @@
       // 
       this.labelEnterState.AutoSize = true;
       this.labelEnterState.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      this.labelEnterState.Location = new System.Drawing.Point(386, 82);
+      this.labelEnterState.Location = new System.Drawing.Point(419, 82);
       this.labelEnterState.Name = "labelEnterState";
       this.labelEnterState.Size = new System.Drawing.Size(105, 20);
       this.labelEnterState.TabIndex = 16;
@@ -542,7 +542,7 @@
       // 
       // textBoxEnterCounty
       // 
-      this.textBoxEnterCounty.Location = new System.Drawing.Point(570, 105);
+      this.textBoxEnterCounty.Location = new System.Drawing.Point(662, 105);
       this.textBoxEnterCounty.Name = "textBoxEnterCounty";
       this.textBoxEnterCounty.Size = new System.Drawing.Size(158, 22);
       this.textBoxEnterCounty.TabIndex = 19;
@@ -551,7 +551,7 @@
       // 
       this.labelEnterCounty.AutoSize = true;
       this.labelEnterCounty.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      this.labelEnterCounty.Location = new System.Drawing.Point(572, 82);
+      this.labelEnterCounty.Location = new System.Drawing.Point(664, 82);
       this.labelEnterCounty.Name = "labelEnterCounty";
       this.labelEnterCounty.Size = new System.Drawing.Size(117, 20);
       this.labelEnterCounty.TabIndex = 18;
@@ -559,7 +559,7 @@
       // 
       // textBoxEnterCity
       // 
-      this.textBoxEnterCity.Location = new System.Drawing.Point(759, 105);
+      this.textBoxEnterCity.Location = new System.Drawing.Point(918, 105);
       this.textBoxEnterCity.Name = "textBoxEnterCity";
       this.textBoxEnterCity.Size = new System.Drawing.Size(158, 22);
       this.textBoxEnterCity.TabIndex = 21;
@@ -568,7 +568,7 @@
       // 
       this.labelEnterCity.AutoSize = true;
       this.labelEnterCity.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      this.labelEnterCity.Location = new System.Drawing.Point(761, 82);
+      this.labelEnterCity.Location = new System.Drawing.Point(920, 82);
       this.labelEnterCity.Name = "labelEnterCity";
       this.labelEnterCity.Size = new System.Drawing.Size(94, 20);
       this.labelEnterCity.TabIndex = 20;
