@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<cities>
+  <city>
+    <name>Aventura</name>
+  </city>
+  <city>
+    <name>Coral Gables</name>
+  </city>
+  <city>
+    <name>Doral</name>
+  </city>
+  <city>
+    <name>Florida City</name>
+  </city>
+  <city>
+    <name>Hialeah Gardens</name>
+  </city>
+  <city>
+    <name>Hialeah</name>
+  </city>
+  <city>
+    <name>Homestead</name>
+  </city>
+  <city>
+    <name>Miami</name>
+  </city>
+  <city>
+    <name>Miami Beach</name>
+  </city>
+  <city>
+    <name>Miami Gardens</name>
+  </city>
+  <city>
+    <name>Miami Springs</name>
+  </city>
+  <city>
+    <name>North Bay Village</name>
+  </city>
+  <city>
+    <name>North Miami Beach</name>
+  </city>
+  <city>
+    <name>North Miami</name>
+  </city>
+  <city>
+    <name>Opa-locka</name>
+  </city>
+  <city>
+    <name>South Miami</name>
+  </city>
+  <city>
+    <name>Sunny Isles Beach</name>
+  </city>
+  <city>
+    <name>Sweetwater, Miami-Dade County</name>
+  </city>
+  <city>
+    <name>West Miami</name>
+  </city>
+</cities>

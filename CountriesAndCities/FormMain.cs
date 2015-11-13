@@ -954,7 +954,18 @@ namespace CountriesAndCities
     private void comboBoxSelectCounty_SelectedIndexChanged(object sender, EventArgs e)
     {
       ClearComboBoxes(comboBoxSelectCity);
-      // switch
+      switch (comboBoxSelectCounty.SelectedItem.ToString())
+      {
+        case "Pinellas county":
+          LoadComboBox(comboBoxSelectCity, "Resources\\Cities-Pinellas.xml", "city");
+          SetComboText(comboBoxSelectCity, "a city");
+          break;
+        case "Miami-Dade county":
+          LoadComboBox(comboBoxSelectCity, "Resources\\Cities-Miami-Dade.xml", "city");
+          SetComboText(comboBoxSelectCity, "a city");
+          break;
+
+      }
 
       AdjustAllControls();
     }

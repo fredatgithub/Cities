@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<cities>
+  <city>
+    <name>Belleair Beach</name>
+  </city>
+  <city>
+    <name>Belleair Bluffs</name>
+  </city>
+  <city>
+    <name>Clearwater</name>
+  </city>
+  <city>
+    <name>Dunedin</name>
+  </city>
+  <city>
+    <name>Gulfport</name>
+  </city>
+  <city>
+    <name>Indian Rocks Beach</name>
+  </city>
+  <city>
+    <name>Largo</name>
+  </city>
+  <city>
+    <name>Madeira Beach</name>
+  </city>
+  <city>
+    <name>Oldsmar</name>
+  </city>
+  <city>
+    <name>Pinellas Park</name>
+  </city>
+  <city>
+    <name>Safety Harbor</name>
+  </city>
+  <city>
+    <name>St. Pete Beach</name>
+  </city>
+  <city>
+    <name>Seminole</name>
+  </city>
+  <city>
+    <name>South Pasadena</name>
+  </city>
+  <city>
+    <name>St. Petersburg</name>
+  </city>
+  <city>
+    <name>Tarpon Springs</name>
+  </city>
+  <city>
+    <name>Treasure Island</name>
+  </city>
+</cities>

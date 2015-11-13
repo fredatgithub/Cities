@@ -109,6 +109,12 @@
     <Content Include="Resources\Cities-France.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Resources\Cities-Miami-Dade.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Cities-Pinellas.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Resources\Cities-USA.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
