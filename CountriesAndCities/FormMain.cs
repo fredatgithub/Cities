@@ -958,15 +958,14 @@ namespace CountriesAndCities
       {
         case "Pinellas county":
           LoadComboBox(comboBoxSelectCity, "Resources\\Cities-Pinellas.xml", "city");
-          SetComboText(comboBoxSelectCity, "a city");
           break;
         case "Miami-Dade county":
           LoadComboBox(comboBoxSelectCity, "Resources\\Cities-Miami-Dade.xml", "city");
-          SetComboText(comboBoxSelectCity, "a city");
           break;
 
       }
 
+      SetComboText(comboBoxSelectCity, "a city");
       AdjustAllControls();
     }
 
