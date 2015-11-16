@@ -106,6 +106,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Resources\Cities-Alachua.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Resources\Cities-France.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

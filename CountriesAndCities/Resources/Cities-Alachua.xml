@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<cities>
+  <city>
+    <name>Alachua</name>
+  </city>
+  <city>
+    <name>Archer</name>
+  </city>
+  <city>
+    <name>Gainesville</name>
+  </city>
+  <city>
+    <name>Hawthorne</name>
+  </city>
+  <city>
+    <name>High Springs</name>
+  </city>
+  <city>
+    <name>Newberry</name>
+  </city>
+  <city>
+    <name>Waldo</name>
+  </city>
+</cities>

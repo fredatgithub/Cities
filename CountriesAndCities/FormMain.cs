@@ -925,6 +925,7 @@ namespace CountriesAndCities
           SetComboText(comboBoxSelectCounty, "a county");
           break;
 
+
       }
 
       AdjustAllControls();
@@ -961,6 +962,9 @@ namespace CountriesAndCities
           break;
         case "Miami-Dade county":
           LoadComboBox(comboBoxSelectCity, "Resources\\Cities-Miami-Dade.xml", "city");
+          break;
+        case "Alachua county":
+          LoadComboBox(comboBoxSelectCity, "Resources\\Cities-Alachua.xml", "city");
           break;
 
       }
