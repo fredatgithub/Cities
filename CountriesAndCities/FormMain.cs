@@ -966,7 +966,9 @@ namespace CountriesAndCities
         case "Alachua county":
           LoadComboBox(comboBoxSelectCity, "Resources\\Cities-Alachua.xml", "city");
           break;
-
+        case "Baker county":
+          LoadComboBox(comboBoxSelectCity, "Resources\\Cities-Baker-county.xml", "city");
+          break;
       }
 
       SetComboText(comboBoxSelectCity, "a city");
