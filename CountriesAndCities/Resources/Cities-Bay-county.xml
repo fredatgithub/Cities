@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<cities>
+  <city>
+    <name>Callaway</name>
+  </city>
+  <city>
+    <name>Lynn Haven</name>
+  </city>
+  <city>
+    <name>Mexico Beach</name>
+  </city>
+  <city>
+    <name>Panama City Beach</name>
+  </city>
+  <city>
+    <name>Panama City</name>
+  </city>
+  <city>
+    <name>Parker</name>
+  </city>
+  <city>
+    <name>Springfield</name>
+  </city>
+</cities>

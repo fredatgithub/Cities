@@ -112,6 +112,9 @@
     <Content Include="Resources\Cities-Baker-county.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Resources\Cities-Bay-county.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Resources\Cities-France.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
