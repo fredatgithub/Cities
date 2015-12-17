@@ -1,6 +1,23 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <cities>
   <city>
-    <name></name>
+    <name>
+      Hampton
+    </name>
+  </city>
+  <city>
+    <name>
+      Keystone Heights
+    </name>
+  </city>
+  <city>
+    <name>
+      Lawtey
+    </name>
+  </city>
+  <city>
+    <name>
+      Starke
+    </name>
   </city>
 </cities>

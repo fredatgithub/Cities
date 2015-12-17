@@ -1,4 +1,38 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <cities>
-  
+  <city>
+    <name>
+      Cocoa Beach
+    </name>
+  </city>
+  <city>
+    <name>
+      Cocoa
+    </name>
+  </city>
+  <city>
+    <name>
+      Indian Harbour Beach
+    </name>
+  </city>
+  <city>
+    <name>
+      Melbourne
+    </name>
+  </city>
+  <city>
+    <name>
+      Palm Bay
+    </name>
+  </city>
+  <city>
+    <name>
+      Satellite Beach
+    </name>
+  </city>
+  <city>
+    <name>
+      Titusville
+    </name>
+  </city>
 </cities>
