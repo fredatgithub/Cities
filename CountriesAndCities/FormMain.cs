@@ -975,6 +975,9 @@ namespace CountriesAndCities
         case "Bradford county":
           LoadComboBox(comboBoxSelectCity, "Resources\\Cities-Bradford-county.xml", "city");
           break;
+        case "Brevard county":
+          LoadComboBox(comboBoxSelectCity, "Resources\\Cities-Brevard-county.xml", "city");
+          break;
       }
 
       SetComboText(comboBoxSelectCity, "a city");
