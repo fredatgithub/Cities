@@ -954,6 +954,8 @@ namespace CountriesAndCities
 
     private void comboBoxSelectCounty_SelectedIndexChanged(object sender, EventArgs e)
     {
+      // get them from https://en.wikipedia.org/wiki/Category:Cities_in_Florida_by_county
+
       ClearComboBoxes(comboBoxSelectCity);
       switch (comboBoxSelectCounty.SelectedItem.ToString())
       {
