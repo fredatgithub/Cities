@@ -22,7 +22,7 @@ using System.Windows.Forms;
 
 namespace CountriesAndCities
 {
-  internal partial class FormOptions : Form
+  internal abstract partial class FormOptions : Form
   {
     internal FormOptions(ConfigurationOptions configurationOptions)
     {
@@ -41,7 +41,7 @@ namespace CountriesAndCities
       checkBoxOption2.Checked = ConfigurationOptions2.Option2Name;
     }
 
-    internal ConfigurationOptions ConfigurationOptions2 { get; }
+    public ConfigurationOptions ConfigurationOptions2 { get; }
 
     private void buttonOptionsOK_Click(object sender, EventArgs e)
     {
