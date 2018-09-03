@@ -813,7 +813,7 @@ namespace CountriesAndCities
       AlignControls(comboBoxSelectCity, labelEnterCity, textBoxEnterCity, labelSelectCity);
     }
 
-    private void optionsToolStripMenuItem_Click(object sender, EventArgs e)
+    private void OptionsToolStripMenuItem_Click(object sender, EventArgs e)
     {
       FormOptions frmOptions = new FormOptions(_configurationOptions);
 
