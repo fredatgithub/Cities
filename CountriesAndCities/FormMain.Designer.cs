@@ -230,7 +230,7 @@
       this.cutToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.X)));
       this.cutToolStripMenuItem.Size = new System.Drawing.Size(197, 26);
       this.cutToolStripMenuItem.Text = "&Couper";
-      this.cutToolStripMenuItem.Click += new System.EventHandler(this.cutToolStripMenuItem_Click);
+      this.cutToolStripMenuItem.Click += new System.EventHandler(this.CutToolStripMenuItem_Click);
       // 
       // copyToolStripMenuItem
       // 
@@ -239,7 +239,7 @@
       this.copyToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.C)));
       this.copyToolStripMenuItem.Size = new System.Drawing.Size(197, 26);
       this.copyToolStripMenuItem.Text = "Co&pier";
-      this.copyToolStripMenuItem.Click += new System.EventHandler(this.copyToolStripMenuItem_Click);
+      this.copyToolStripMenuItem.Click += new System.EventHandler(this.CopyToolStripMenuItem_Click);
       // 
       // pasteToolStripMenuItem
       // 
@@ -248,7 +248,7 @@
       this.pasteToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.V)));
       this.pasteToolStripMenuItem.Size = new System.Drawing.Size(197, 26);
       this.pasteToolStripMenuItem.Text = "Co&ller";
-      this.pasteToolStripMenuItem.Click += new System.EventHandler(this.pasteToolStripMenuItem_Click);
+      this.pasteToolStripMenuItem.Click += new System.EventHandler(this.PasteToolStripMenuItem_Click);
       // 
       // toolStripSeparator4
       // 
@@ -260,7 +260,7 @@
       this.selectAllToolStripMenuItem.Name = "selectAllToolStripMenuItem";
       this.selectAllToolStripMenuItem.Size = new System.Drawing.Size(197, 26);
       this.selectAllToolStripMenuItem.Text = "Sélectio&nner tout";
-      this.selectAllToolStripMenuItem.Click += new System.EventHandler(this.selectAllToolStripMenuItem_Click);
+      this.selectAllToolStripMenuItem.Click += new System.EventHandler(this.SelectAllToolStripMenuItem_Click);
       // 
       // toolsToolStripMenuItem
       // 
@@ -300,14 +300,14 @@
       this.frenchToolStripMenuItem.Name = "frenchToolStripMenuItem";
       this.frenchToolStripMenuItem.Size = new System.Drawing.Size(137, 26);
       this.frenchToolStripMenuItem.Text = "Français";
-      this.frenchToolStripMenuItem.Click += new System.EventHandler(this.frenchToolStripMenuItem_Click);
+      this.frenchToolStripMenuItem.Click += new System.EventHandler(this.FrenchToolStripMenuItem_Click);
       // 
       // englishToolStripMenuItem
       // 
       this.englishToolStripMenuItem.Name = "englishToolStripMenuItem";
       this.englishToolStripMenuItem.Size = new System.Drawing.Size(137, 26);
       this.englishToolStripMenuItem.Text = "Anglais";
-      this.englishToolStripMenuItem.Click += new System.EventHandler(this.englishToolStripMenuItem_Click);
+      this.englishToolStripMenuItem.Click += new System.EventHandler(this.EnglishToolStripMenuItem_Click);
       // 
       // DisplayToolStripMenuItem
       // 
@@ -393,7 +393,7 @@
       this.comboBoxSelectCountry.Size = new System.Drawing.Size(220, 28);
       this.comboBoxSelectCountry.TabIndex = 22;
       this.comboBoxSelectCountry.Text = "Select a country";
-      this.comboBoxSelectCountry.SelectedIndexChanged += new System.EventHandler(this.comboBoxSelectCountry_SelectedIndexChanged);
+      this.comboBoxSelectCountry.SelectedIndexChanged += new System.EventHandler(this.ComboBoxSelectCountry_SelectedIndexChanged);
       // 
       // labelSelectCountry
       // 
@@ -424,7 +424,7 @@
       this.comboBoxSelectCity.Size = new System.Drawing.Size(221, 28);
       this.comboBoxSelectCity.TabIndex = 4;
       this.comboBoxSelectCity.Text = "Select a city";
-      this.comboBoxSelectCity.SelectedIndexChanged += new System.EventHandler(this.comboBoxSelectCity_SelectedIndexChanged);
+      this.comboBoxSelectCity.SelectedIndexChanged += new System.EventHandler(this.ComboBoxSelectCity_SelectedIndexChanged);
       // 
       // labelSelectContinent
       // 
@@ -445,7 +445,7 @@
       this.comboBoxSelectContinent.Size = new System.Drawing.Size(159, 28);
       this.comboBoxSelectContinent.TabIndex = 2;
       this.comboBoxSelectContinent.Text = "Select a continent";
-      this.comboBoxSelectContinent.SelectedIndexChanged += new System.EventHandler(this.comboBoxSelectContinent_SelectedIndexChanged);
+      this.comboBoxSelectContinent.SelectedIndexChanged += new System.EventHandler(this.ComboBoxSelectContinent_SelectedIndexChanged);
       // 
       // labelEnterContinent
       // 
@@ -476,7 +476,7 @@
       this.comboBoxSelectState.Size = new System.Drawing.Size(230, 28);
       this.comboBoxSelectState.TabIndex = 9;
       this.comboBoxSelectState.Text = "Select a state";
-      this.comboBoxSelectState.SelectedIndexChanged += new System.EventHandler(this.comboBoxSelectState_SelectedIndexChanged);
+      this.comboBoxSelectState.SelectedIndexChanged += new System.EventHandler(this.ComboBoxSelectState_SelectedIndexChanged);
       // 
       // labelSelectCounty
       // 
@@ -497,7 +497,7 @@
       this.comboBoxSelectCounty.Size = new System.Drawing.Size(227, 28);
       this.comboBoxSelectCounty.TabIndex = 11;
       this.comboBoxSelectCounty.Text = "Select a county";
-      this.comboBoxSelectCounty.SelectedIndexChanged += new System.EventHandler(this.comboBoxSelectCounty_SelectedIndexChanged);
+      this.comboBoxSelectCounty.SelectedIndexChanged += new System.EventHandler(this.ComboBoxSelectCounty_SelectedIndexChanged);
       // 
       // textBoxEnterContinent
       // 

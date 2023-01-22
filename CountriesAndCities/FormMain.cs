@@ -411,14 +411,14 @@ namespace CountriesAndCities
       SaveWindowValue();
     }
 
-    private void frenchToolStripMenuItem_Click(object sender, EventArgs e)
+    private void FrenchToolStripMenuItem_Click(object sender, EventArgs e)
     {
       _currentLanguage = Language.French.ToString();
       SetLanguage(Language.French.ToString());
       AdjustAllControls();
     }
 
-    private void englishToolStripMenuItem_Click(object sender, EventArgs e)
+    private void EnglishToolStripMenuItem_Click(object sender, EventArgs e)
     {
       _currentLanguage = Language.English.ToString();
       SetLanguage(Language.English.ToString());
@@ -532,7 +532,7 @@ namespace CountriesAndCities
       }
     }
 
-    private void cutToolStripMenuItem_Click(object sender, EventArgs e)
+    private void CutToolStripMenuItem_Click(object sender, EventArgs e)
     {
       Control focusedControl = FindFocusedControl(new List<Control> { }); // add your controls in the List
       var tb = focusedControl as TextBox;
@@ -542,7 +542,7 @@ namespace CountriesAndCities
       }
     }
 
-    private void copyToolStripMenuItem_Click(object sender, EventArgs e)
+    private void CopyToolStripMenuItem_Click(object sender, EventArgs e)
     {
       Control focusedControl = FindFocusedControl(new List<Control> { }); // add your controls in the List
       var tb = focusedControl as TextBox;
@@ -552,7 +552,7 @@ namespace CountriesAndCities
       }
     }
 
-    private void pasteToolStripMenuItem_Click(object sender, EventArgs e)
+    private void PasteToolStripMenuItem_Click(object sender, EventArgs e)
     {
       Control focusedControl = FindFocusedControl(new List<Control> { }); // add your controls in the List
       var tb = focusedControl as TextBox;
@@ -562,7 +562,7 @@ namespace CountriesAndCities
       }
     }
 
-    private void selectAllToolStripMenuItem_Click(object sender, EventArgs e)
+    private void SelectAllToolStripMenuItem_Click(object sender, EventArgs e)
     {
       Control focusedControl = FindFocusedControl(new List<Control> { }); // add your controls in the List
       TextBox control = focusedControl as TextBox;
@@ -845,7 +845,7 @@ namespace CountriesAndCities
       button.Enabled = result;
     }
 
-    private void textBoxName_KeyDown(object sender, KeyEventArgs e)
+    private void TextBoxName_KeyDown(object sender, KeyEventArgs e)
     {
       if (e.KeyCode == Keys.Enter)
       {
@@ -862,7 +862,7 @@ namespace CountriesAndCities
       }
     }
 
-    private void comboBoxSelectContinent_SelectedIndexChanged(object sender, EventArgs e)
+    private void ComboBoxSelectContinent_SelectedIndexChanged(object sender, EventArgs e)
     {
       //Load country combobox according to the continent chosen
       ClearComboBoxes(comboBoxSelectCountry, comboBoxSelectState, comboBoxSelectCounty, comboBoxSelectCity);
@@ -897,7 +897,7 @@ namespace CountriesAndCities
       box.Text = Translate("Select") + Punctuation.OneSpace + Translate(area);
     }
 
-    private void comboBoxSelectCountry_SelectedIndexChanged(object sender, EventArgs e)
+    private void ComboBoxSelectCountry_SelectedIndexChanged(object sender, EventArgs e)
     {
       ClearComboBoxes(comboBoxSelectState, comboBoxSelectCounty, comboBoxSelectCity);
       switch (comboBoxSelectCountry.SelectedItem.ToString())
@@ -915,7 +915,7 @@ namespace CountriesAndCities
       AdjustAllControls();
     }
 
-    private void comboBoxSelectState_SelectedIndexChanged(object sender, EventArgs e)
+    private void ComboBoxSelectState_SelectedIndexChanged(object sender, EventArgs e)
     {
       ClearComboBoxes(comboBoxSelectCounty, comboBoxSelectCity);
       switch (comboBoxSelectState.SelectedItem.ToString())
@@ -952,7 +952,7 @@ namespace CountriesAndCities
       return result;
     }
 
-    private void comboBoxSelectCounty_SelectedIndexChanged(object sender, EventArgs e)
+    private void ComboBoxSelectCounty_SelectedIndexChanged(object sender, EventArgs e)
     {
       // get them from https://en.wikipedia.org/wiki/Category:Cities_in_Florida_by_county
 
@@ -986,7 +986,7 @@ namespace CountriesAndCities
       AdjustAllControls();
     }
 
-    private void comboBoxSelectCity_SelectedIndexChanged(object sender, EventArgs e)
+    private void ComboBoxSelectCity_SelectedIndexChanged(object sender, EventArgs e)
     {
       AdjustAllControls();
     }

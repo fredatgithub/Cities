@@ -3,7 +3,7 @@ using System.Windows.Forms;
 
 namespace CountriesAndCities
 {
-  internal abstract partial class FormOptions : Form
+  internal  partial class FormOptions : Form
   {
     internal FormOptions(ConfigurationOptions configurationOptions)
     {
